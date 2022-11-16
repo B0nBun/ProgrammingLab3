@@ -28,3 +28,30 @@
 ![Модель](uml-img.png)
 
 # Исходный код программы
+
+[Проект, выложенный на github](https://github.com/B0nBun/ProgrammingLab3)
+
+# Результат программы
+
+<pre>
+[Jack Torrance, Creature] are in the room "basement"
+Creature feels Fear
+Creature feels Panic
+Creature speaks as Jack Torrance: "Нельзя! О нет, нельзя!"
+[Jack Torrance, Creature] transferred to "hallway"
+[Jack Torrance, Creature] transferred to "boiler-room"
+Creature speaks as Jack Torrance: "Нет, этого нельзя допустить!"
+Creature tries to use 'Overlook' Boiler
+Creature tries to use 'Overlook' Boiler
+Creature tries to use 'Overlook' Boiler
+Jack Torrance's hands are melting
+Boiler's pressure relieved from being too high!
+Creature feels Ecstasy
+<span style="color: tomato">Exception in thread "main" java.lang.RuntimeException: The 'Overlook' boiler exploded!
+        at lib.Boiler.explode(Boiler.java:41)
+        at Main.main(Main.java:52)</span>
+</pre>
+
+# Выводы
+
+В процессе выполнения этой лабораторной работы я изучил принципы SOLID и STUPID. Ознакомился с работой механизмов ООП в Java (наследование, переопределение, перегрузка), энумерациями, интерфейсами, абстрактными классами. А также хоть сколько-то попробовал развить в себе навыки проектирование моделей и архитектуры определенной предметной области. 
