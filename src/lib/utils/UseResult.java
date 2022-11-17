@@ -10,4 +10,9 @@ public class UseResult {
         this.success = success;
         this.temp = temp;
     }
+
+    @Override
+    public String toString() {
+        return "UseResult(" + this.success + ", " + this.temp + ")";
+    }
 }

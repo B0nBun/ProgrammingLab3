@@ -34,10 +34,12 @@ public class Creature extends Entity {
     @Override
     public UseResult uses(Usable thing) {
         UseResult useresult = null;
+        int i = 0;
 
-        while (useresult == null || !useresult.success) {
+        while ((useresult == null || !useresult.success) && (i < 5)) {
             System.out.println("Creature tries to use " + thing.toString());
             useresult = this.possessedEntity.uses(thing);
+            i ++;
         }
 
         return useresult;

@@ -11,7 +11,7 @@ public class Valve implements Usable {
     }
     
     private boolean willJam() {
-        return Math.random() > 0.5;
+        return Math.random() > 0.4;
     }
 
     @Override

@@ -15,7 +15,11 @@ public class Boiler implements Usable {
     
     @Override
     public UseResult use() {
-        return this.valve.use();
+        UseResult useresult = this.valve.use();
+        if (useresult.success) {
+            this.relievePressure();
+        }
+        return useresult;
     }
 
     public Boiler increasePressure() {
@@ -24,7 +28,7 @@ public class Boiler implements Usable {
         return this;
     }
 
-    public Boiler relievePressure() {
+    private Boiler relievePressure() {
         if (this.isPressureTooHigh()) {
             System.out.println("Boiler's pressure relieved from being too high!");
         }

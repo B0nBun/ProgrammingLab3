@@ -41,8 +41,6 @@ public class Main {
 		var useresult = creature.uses(boiler);
 
 		if (useresult.success) {
-			boiler.relievePressure();
-			
 			creature
 				.stopFeeling(Emotion.Fear)
 				.stopFeeling(Emotion.Panic)
