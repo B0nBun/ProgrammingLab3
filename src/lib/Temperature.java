@@ -10,12 +10,7 @@ public enum Temperature {
     Melting;
 
     public boolean hotter(Temperature other) {
-        Temperature[] temps = Temperature.values();
-
-        int thisIdx = Arrays.binarySearch(temps, this);
-        int otherIdx = Arrays.binarySearch(temps, other);
-
-        return thisIdx > otherIdx;
+        return this.ordinal() > other.ordinal();
     }
 
     public boolean hottereq(Temperature other) {
@@ -23,12 +18,7 @@ public enum Temperature {
     }
 
     public boolean lower(Temperature other) {
-        Temperature[] temps = Temperature.values();
-
-        int thisIdx = Arrays.binarySearch(temps, this);
-        int otherIdx = Arrays.binarySearch(temps, other);
-
-        return thisIdx < otherIdx;
+        return this.ordinal() < other.ordinal();
     }
 
     public boolean lowereq(Temperature other) {
